@@ -1,0 +1,4 @@
+node_modules/
+zig/zig-out/
+zig/.zig-cache/
+types/

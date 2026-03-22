@@ -1,0 +1,52 @@
+{
+  "name": "@jsondelta/merge",
+  "version": "1.0.0",
+  "description": "Zig-powered three-way JSON merge with conflict detection",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./fallback": {
+      "types": "./types/fallback.d.ts",
+      "default": "./src/fallback.js"
+    },
+    "./wasm": {
+      "types": "./types/wasm.d.ts",
+      "default": "./src/wasm.js"
+    }
+  },
+  "files": [
+    "src",
+    "wasm",
+    "types"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "prepublishOnly": "npx tsc --declaration --allowJs --emitDeclarationOnly --skipLibCheck --target es2020 --module nodenext --moduleResolution nodenext --strict false --esModuleInterop true --outDir ./types src/index.js src/fallback.js src/wasm.js"
+  },
+  "keywords": [
+    "json",
+    "merge",
+    "three-way",
+    "conflict",
+    "zig",
+    "wasm",
+    "performance"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsondelta/merge.git"
+  },
+  "dependencies": {
+    "@jsondelta/diff": "^1.0.0",
+    "@jsondelta/patch": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

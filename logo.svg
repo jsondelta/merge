@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="128" height="128">
+  <rect width="256" height="256" rx="16" fill="#111"/>
+  <!-- left branch -->
+  <line x1="80" y1="48" x2="128" y2="128" stroke="#4cc9f0" stroke-width="3" stroke-linecap="round"/>
+  <!-- right branch -->
+  <line x1="176" y1="48" x2="128" y2="128" stroke="#f72585" stroke-width="3" stroke-linecap="round"/>
+  <!-- merged trunk -->
+  <line x1="128" y1="128" x2="128" y2="216" stroke="#f4a261" stroke-width="3" stroke-linecap="round"/>
+  <!-- left node -->
+  <circle cx="80" cy="48" r="12" fill="#1a1a1a" stroke="#4cc9f0" stroke-width="2.5"/>
+  <rect x="72" y="46" width="16" height="3" rx="1.5" fill="#4cc9f0"/>
+  <!-- right node -->
+  <circle cx="176" cy="48" r="12" fill="#1a1a1a" stroke="#f72585" stroke-width="2.5"/>
+  <rect x="168" y="46" width="16" height="3" rx="1.5" fill="#f72585"/>
+  <!-- merge point -->
+  <circle cx="128" cy="128" r="14" fill="#1a1a1a" stroke="#f4a261" stroke-width="2.5"/>
+  <rect x="120" y="124" width="16" height="3" rx="1.5" fill="#4cc9f0"/>
+  <rect x="120" y="130" width="16" height="3" rx="1.5" fill="#f72585"/>
+  <!-- result node -->
+  <circle cx="128" cy="216" r="12" fill="#1a1a1a" stroke="#7209b5" stroke-width="2.5"/>
+  <rect x="120" y="212" width="16" height="3" rx="1.5" fill="#7209b5"/>
+  <rect x="120" y="218" width="16" height="3" rx="1.5" fill="#7209b5"/>
+</svg>
